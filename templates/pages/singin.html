@@ -1,0 +1,74 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Animated Login Form using Html &amp; CSS Only</title>
+    <link rel="stylesheet" href="{% static "pages/css/style.css" %}">
+</head>
+<body> <!-- partial:index.partial.html -->
+<section><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+    <span></span> <span></span> <span></span> <span></span>
+    <div class="signin">
+        <form method="post">
+            <div class="content">
+                <h2>Sign In</h2>
+                <div class="form">
+                    <div class="inputBox">
+                        <input type="text" name="userName" id="userName" required>
+                        <i>Username</i>
+                        {% if errorUserName != None %}
+                            <p>{{ errorUserName }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="userPass" id="userPass" required>
+                        <i>Password</i>
+                        {% if errorUserPass != None %}
+                            <p>{{ errorUserPass }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="links">
+                        <a href="#" onclick="alert('we reset your password and email to you')">Forgot Password</a>
+                        <a href="/signup">Sign Up</a>
+                    </div>
+                    <div class="inputBox"><input type="submit" value="Sign In"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section> <!-- partial -->
+</body>
+</html>
